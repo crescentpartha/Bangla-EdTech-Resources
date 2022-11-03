@@ -17,7 +17,7 @@ assignees: ''
 > If applicable, add `screenshots` or a `modified UI link` to help explain your contribution.
 
 **Additional Context**
-> Please, directly create a pull request and @mention your pull request id here like <br /> close/closes/closed or fix/fixes/fixed or resolve/resolves/resolved #1
+> Please, directly create a pull request and @mention your `issue id` here.
 
 ---
 
