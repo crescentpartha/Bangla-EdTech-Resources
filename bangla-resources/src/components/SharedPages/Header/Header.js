@@ -9,7 +9,7 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" sticky="top" bg="light" variant="light">
                 <Container>
                     <Navbar.Brand as={Link} to="/home" className='d-flex align-items-center gap-2'>
-                        <img src={image} width='30px' alt="logo" />
+                        <img src={image} width='30px' alt="লগো" />
                         <span className='' style={{color: '#330662'}}>বাংলা রিসোর্স</span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
