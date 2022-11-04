@@ -16,7 +16,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto py-1">
                             <NavDropdown title="টিউটরিয়াল" id="collasible-nav-dropdown">
-                                <NavDropdown.Item as={Link} to="/pythonHome">পাইথন</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/pythonHome/introduction">পাইথন</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/cHome">সি</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>

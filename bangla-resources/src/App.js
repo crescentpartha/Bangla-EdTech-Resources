@@ -8,6 +8,9 @@ import Register from './components/Authentication/Register/Register';
 import Login from './components/Authentication/Login/Login';
 import PythonHome from './components/Pages/Python/pythonHome/PythonHome';
 import CHome from './components/Pages/C/CHome/CHome';
+import Introduction from './components/Pages/Python/Contents/js/Introduction';
+import GetStarted from './components/Pages/Python/Contents/js/GetStarted';
+import Syntax from './components/Pages/Python/Contents/js/Syntax';
 
 function App() {
   return (
@@ -16,7 +19,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/pythonHome' element={<PythonHome></PythonHome>}></Route>
+        <Route path='/pythonHome' element={<PythonHome></PythonHome>}>
+          <Route path='introduction' element={<Introduction></Introduction>}></Route>
+          <Route path='getStarted' element={<GetStarted></GetStarted>}></Route>
+          <Route path='syntax' element={<Syntax></Syntax>}></Route>
+        </Route>
         <Route path='/cHome' element={<CHome></CHome>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
