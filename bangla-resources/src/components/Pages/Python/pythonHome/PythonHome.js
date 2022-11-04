@@ -6,7 +6,7 @@ const PythonHome = () => {
     return (
         <div style={{ display: 'grid', gridTemplateColumns: '250px auto' }}>
             {/* <h2>Python Home</h2> */}
-            <div className='pt-3 bg-light position-sticky border-end' style={{ height: '100vh', width: '100%', overflow: 'auto' }}>
+            <div className='navigation pt-3 bg-light position-sticky border-end' style={{ height: '100vh', width: '100%', overflow: 'auto' }}>
                 <nav className='d-flex flex-column flex-wrap text-start'>
                     <h5 className='py-2 px-3 m-0 fw-semibold text-secondary'>পাইথন টিউটোরিয়াল</h5>
                     <Link className='py-1 px-3 text-decoration-none text-dark' to='introduction'>ভূমিকা</Link>

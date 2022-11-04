@@ -8,7 +8,7 @@
         background-color: #04AA6D;
 */
 
-a:hover {
+.navigation > nav > a:hover {
     color: white;
     background-color: #04AA6D;
 }
