@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import CustomLink from '../../../SharedPages/CustomLink/CustomLink';
-import PythonHeader from '../PythonHeader/PythonHeader';
+import PythonHeader from '../../PagesHeader/PagesHeader';
 import './PythonHome.css';
 
 const PythonHome = () => {

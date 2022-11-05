@@ -1,0 +1,12 @@
+.clipboard {
+    background-color: #eee;
+    /* border: 1px solid #999; */
+    display: block;
+    padding: 20px;
+    border-radius: 5px;
+}
+pre {
+    background-color: white;
+    border-left: 5px solid #04AA6D;
+    padding: 10px;
+}
