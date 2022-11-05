@@ -1,0 +1,11 @@
+.python-header {
+    background-color: #282A35;
+}
+/* .textColor {
+    color: #ECECEC;
+} */
+
+/* hover effect */
+.header-hover > div > a:hover {
+    background-color: #000000;
+}

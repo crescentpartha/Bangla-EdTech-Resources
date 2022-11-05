@@ -6,7 +6,7 @@ import Header from './components/SharedPages/Header/Header';
 import Footer from './components/SharedPages/Footer/Footer';
 import Register from './components/Authentication/Register/Register';
 import Login from './components/Authentication/Login/Login';
-import PythonHome from './components/Pages/Python/pythonHome/PythonHome';
+import PythonHome from './components/Pages/Python/PythonHome/PythonHome';
 import CHome from './components/Pages/C/CHome/CHome';
 import Introduction from './components/Pages/Python/Contents/js/Introduction';
 import GetStarted from './components/Pages/Python/Contents/js/GetStarted';
