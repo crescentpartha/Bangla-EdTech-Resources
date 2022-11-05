@@ -1,12 +1,17 @@
-.clipboard {
+.clipboard, .clipboard-terminal {
     background-color: #eee;
-    /* border: 1px solid #999; */
     display: block;
     padding: 20px;
     border-radius: 5px;
 }
-pre {
+.clipboard > pre {
     background-color: white;
     border-left: 5px solid #04AA6D;
+    padding: 10px;
+}
+.clipboard-terminal > pre {
+    background-color: #000000;
+    border-left: 5px solid #04AA6D;
+    color: #eee;
     padding: 10px;
 }

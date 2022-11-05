@@ -3,7 +3,7 @@ import '../css/styles.css';
 
 const Introduction = () => {
     return (
-        <div className='' style={{ height: '100vh', overflow: 'auto' }}>
+        <div className='border-bottom' style={{ height: '100vh', overflow: 'auto' }}>
             <div className='text-start p-4'>
                 <h1>ভূমিকা</h1> <br />
                 <div>
