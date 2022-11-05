@@ -1,14 +1,5 @@
-/* 
-    // Have to modify;
 
-    Hover: 
-        background-color: #CCCCCC;
-    Active-Link: 
-        color: white;
-        background-color: #04AA6D;
-*/
-
-.navigation > nav > a:hover {
-    color: white;
-    background-color: #04AA6D;
+/* hover effect */
+.navigation > div > a:hover {
+    background-color: #CCCCCC;
 }
