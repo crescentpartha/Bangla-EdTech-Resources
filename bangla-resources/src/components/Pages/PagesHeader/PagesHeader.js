@@ -7,7 +7,8 @@ import CustomLink1 from '../../SharedPages/CustomLink1/CustomLink1';
 import './PagesHeader.css';
 
 const PagesHeader = () => {
-    const [python, setPython] = useState(true);
+    const [python, setPython] = useState(false);
+    const [c, setC] = useState(false);
     let location = useLocation();
     let path = location.pathname;
 
@@ -16,6 +17,12 @@ const PagesHeader = () => {
     useEffect(() => {
         (python_result) ? setPython(true) : setPython(false)
     }, [python_result]);
+
+    // Conditional Rendering of Header component for Python Tutorial
+    let c_result = path.includes('cHome');
+    useEffect(() => {
+        (c_result) ? setC(true) : setC(false)
+    }, [c_result]);
 
     return (
         <div>
@@ -30,8 +37,11 @@ const PagesHeader = () => {
                             {
                                 python ? <Nav.Link className='text-light p-3' as={CustomLink1} to={path} >পাইথন</Nav.Link> : <Nav.Link className='text-light p-3' as={Link} to={path} >পাইথন</Nav.Link>
                             }
+                            {
+                                c ? <Nav.Link className='text-light p-3' as={CustomLink1} to={path} >সি</Nav.Link> : <Nav.Link className='text-light p-3' as={Link} to={path} >সি</Nav.Link>
+                            }
                             {/* <Nav.Link className='text-light p-3' as={CustomLink1} to="introduction">পাইথন</Nav.Link> */}
-                            <Nav.Link className='text-light p-3' as={CustomLink1} to="/cHome">সি</Nav.Link>
+                            {/* <Nav.Link className='text-light p-3' as={CustomLink1} to="/cHome">সি</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

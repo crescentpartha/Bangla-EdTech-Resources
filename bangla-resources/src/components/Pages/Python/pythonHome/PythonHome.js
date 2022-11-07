@@ -1,13 +1,13 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import CustomLink from '../../../SharedPages/CustomLink/CustomLink';
-import PythonHeader from '../../PagesHeader/PagesHeader';
+import PagesHeader from '../../PagesHeader/PagesHeader';
 import './PythonHome.css';
 
 const PythonHome = () => {
     return (
         <div>
-            <PythonHeader></PythonHeader>
+            <PagesHeader></PagesHeader>
             <div style={{ display: 'grid', gridTemplateColumns: '250px auto' }}>
                 <div className='pt-3 bg-light position-sticky border-end' style={{ height: '100vh', width: '100%', overflow: 'auto' }}>
                     <nav className='home-hover d-flex flex-column flex-wrap text-start'>
