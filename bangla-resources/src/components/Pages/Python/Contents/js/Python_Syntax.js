@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/styles.css';
 
-const Syntax = () => {
+const Python_Syntax = () => {
     return (
         <div className='border-bottom' style={{ height: '100vh', overflow: 'auto' }}>
             <div className='text-start p-4'>
@@ -63,4 +63,4 @@ const Syntax = () => {
     );
 };
 
-export default Syntax;
+export default Python_Syntax;

@@ -32,13 +32,13 @@ const PagesHeader = () => {
                         <FontAwesomeIcon className='text-orange-400 text-sm' icon={faHouseChimney}></FontAwesomeIcon>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav" className=''>
-                        <Nav className="header-hover">
+                    <Navbar.Collapse id="responsive-navbar-nav" className='header-hover'>
+                        <Nav className="">
                             {
-                                python ? <Nav.Link className='text-light p-3' as={CustomLink1} to={path} >পাইথন</Nav.Link> : <Nav.Link className='text-light p-3' as={Link} to={path} >পাইথন</Nav.Link>
+                                python ? <Nav.Link className='text-light p-3' as={CustomLink1} to={path} >পাইথন</Nav.Link> : <Nav.Link className='text-light p-3' as={Link} to='/pythonHome/python_introduction' >পাইথন</Nav.Link>
                             }
                             {
-                                c ? <Nav.Link className='text-light p-3' as={CustomLink1} to={path} >সি</Nav.Link> : <Nav.Link className='text-light p-3' as={Link} to={path} >সি</Nav.Link>
+                                c ? <Nav.Link className='text-light p-3' as={CustomLink1} to={path} >সি</Nav.Link> : <Nav.Link className='text-light p-3' as={Link} to='/cHome/c_introduction' >সি</Nav.Link>
                             }
                             {/* <Nav.Link className='text-light p-3' as={CustomLink1} to="introduction">পাইথন</Nav.Link> */}
                             {/* <Nav.Link className='text-light p-3' as={CustomLink1} to="/cHome">সি</Nav.Link> */}

@@ -12,9 +12,9 @@ const PythonHome = () => {
                 <div className='pt-3 bg-light position-sticky border-end' style={{ height: '100vh', width: '100%', overflow: 'auto' }}>
                     <nav className='home-hover d-flex flex-column flex-wrap text-start'>
                         <h5 className='py-2 px-3 m-0 fw-semibold text-secondary'>পাইথন টিউটোরিয়াল</h5>
-                        <CustomLink className=' py-1 px-3 d-block' to='introduction'>ভূমিকা</CustomLink>
-                        <CustomLink className='py-1 px-3 d-block' to='getStarted'>এবার শুরু করা যাক</CustomLink>
-                        <CustomLink className='py-1 px-3 d-block' to='syntax'>সিনট্যাক্স</CustomLink>
+                        <CustomLink className=' py-1 px-3 d-block' to='python_introduction'>ভূমিকা</CustomLink>
+                        <CustomLink className='py-1 px-3 d-block' to='python_getStarted'>এবার শুরু করা যাক</CustomLink>
+                        <CustomLink className='py-1 px-3 d-block' to='python_syntax'>সিনট্যাক্স</CustomLink>
                     </nav>
                 </div>
                 <Outlet />

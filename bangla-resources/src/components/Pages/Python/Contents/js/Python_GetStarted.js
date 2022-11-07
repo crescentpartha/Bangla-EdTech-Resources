@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/styles.css';
 
-const GetStarted = () => {
+const Python_GetStarted = () => {
     return (
         <div className='border-bottom' style={{ height: '100vh', overflow: 'auto' }}>
             <div className='text-start p-4'>
@@ -76,4 +76,4 @@ const GetStarted = () => {
     );
 };
 
-export default GetStarted;
+export default Python_GetStarted;

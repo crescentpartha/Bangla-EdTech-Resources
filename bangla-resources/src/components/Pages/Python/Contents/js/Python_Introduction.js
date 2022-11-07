@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/styles.css';
 
-const Introduction = () => {
+const Python_Introduction = () => {
     return (
         <div className='border-bottom' style={{ height: '100vh', overflow: 'auto' }}>
             <div className='text-start p-4'>
@@ -55,4 +55,4 @@ const Introduction = () => {
     );
 };
 
-export default Introduction;
+export default Python_Introduction;
