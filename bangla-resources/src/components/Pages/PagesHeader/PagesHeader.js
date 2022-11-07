@@ -9,20 +9,20 @@ import './PagesHeader.css';
 const PagesHeader = () => {
     const [python, setPython] = useState(false);
     const [c, setC] = useState(false);
+
     let location = useLocation();
     let path = location.pathname;
 
-    // Conditional Rendering of Header component for Python Tutorial
-    let python_result = path.includes('pythonHome');
     useEffect(() => {
-        (python_result) ? setPython(true) : setPython(false)
-    }, [python_result]);
+        if (path.includes('pythonHome')) setPython(true)
+        else if (path.includes('cHome')) setC(true)
+    }, [path]);
 
     // Conditional Rendering of Header component for Python Tutorial
-    let c_result = path.includes('cHome');
-    useEffect(() => {
-        (c_result) ? setC(true) : setC(false)
-    }, [c_result]);
+    // let python_result = path.includes('pythonHome');
+    // useEffect(() => {
+    //     (python_result) ? setPython(true) : setPython(false)
+    // }, [python_result]);
 
     return (
         <div>
