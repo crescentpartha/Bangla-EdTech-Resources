@@ -1,5 +1,9 @@
 import React from 'react';
 import '../../../Common/css/styles.css';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import c from 'react-syntax-highlighter/dist/esm/languages/prism/c';
+SyntaxHighlighter.registerLanguage('c', c);
 
 const C_GetStarted = () => {
     return (
@@ -31,15 +35,14 @@ const C_GetStarted = () => {
                         <p>নিচের সি কোডটি লিখুন এবং ফাইলটিকে <mark>myfirstprogram.c</mark> হিসেবে সংরক্ষণ করুন (<b>ফাইল &gt; সেভ ফাইল</b> হিসেবে):</p>
                         <div className='clipboard'>
                             <p>myfirstprogram.c</p>
-                            <pre>
-                                <code className='language-c'>
-                                    #include &lt;stdio.h&gt; <br />
-                                        int main() {'{'} <br />
-                                        &emsp;&emsp;&emsp;&emsp;printf("Hello World!"); <br />
-                                        &emsp;&emsp;&emsp;&emsp;return 0; <br />
-                                    {'}'}
-                                </code>
-                            </pre>
+                            <SyntaxHighlighter language="c" style={dracula}>
+                                {`#include <stdio.h>
+int main() {
+    printf("Hello World!");
+    return 0;
+}
+`}
+                            </SyntaxHighlighter>
                         </div>
                         <p></p>
                     </div>
