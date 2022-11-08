@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/styles.css';
+import '../../../Common/css/styles.css';
 
 const Python_Syntax = () => {
     return (

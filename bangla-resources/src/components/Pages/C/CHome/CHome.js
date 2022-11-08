@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import CustomLink from '../../../SharedPages/CustomLink/CustomLink';
-import PagesHeader from '../../PagesHeader/PagesHeader';
+import PagesHeader from '../../Common/PagesHeader/PagesHeader';
 
 const CHome = () => {
     return (

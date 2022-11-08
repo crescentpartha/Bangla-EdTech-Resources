@@ -1,3 +1,9 @@
+/* hover effect on Content list for individual Tutorial */
+.home-hover > div > a:hover {
+    background-color: #CCCCCC;
+}
+
+/* clipboard style are used to display the code properly */
 .clipboard, .clipboard-terminal {
     background-color: #eee;
     display: block;
