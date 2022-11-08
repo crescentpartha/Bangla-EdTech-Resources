@@ -30,12 +30,12 @@ const C_Introduction = () => {
                             <li>সি++ সি এর একটি এক্সটেনশন হিসাবে বিকশিত হয়েছিল এবং উভয় ভাষাতেই প্রায় একই সিনট্যাক্স রয়েছে।</li>
                             <li>সি এবং সি++ এর মধ্যে প্রধান পার্থক্য হল সি++ ক্লাস এবং অবজেক্টকে সমর্থন করে, যা সি করে না।</li>
                         </ul>
-                    </div>
-                    <div className='clipboard'>
-                        <h3>উদাহরণ</h3>
-                        <pre>
-                            printf("Hello, World!");
-                        </pre>
+                        <div className='clipboard'>
+                            <h3>উদাহরণ</h3>
+                            <pre>
+                                printf("Hello, World!");
+                            </pre>
+                        </div>
                     </div>
                 </div>
             </div>
