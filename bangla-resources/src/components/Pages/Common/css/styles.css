@@ -1,3 +1,7 @@
+mark {
+    border-radius: 5px;
+}
+
 /* hover effect on Content list for individual Tutorial */
 .home-hover > div > a:hover {
     background-color: #CCCCCC;

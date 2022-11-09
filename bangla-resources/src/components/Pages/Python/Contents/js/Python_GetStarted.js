@@ -1,5 +1,8 @@
 import React from 'react';
 import '../../../Common/css/styles.css';
+import Code from '../../../Common/CodeThemes/Dracula_SyntaxHighlighter';
+
+const code = `print("Hello, World!")`;
 
 const Python_GetStarted = () => {
     return (
@@ -30,8 +33,8 @@ const Python_GetStarted = () => {
                         <p className='pt-3'>যেখানে "helloworld.py" আপনার পাইথন ফাইলের নাম।</p>
                         <p>আসুন আমাদের প্রথম পাইথন ফাইলটি লিখি, যার নাম <mark>helloworld.py</mark>, যেটি যেকোন টেক্সট এডিটরে করা যেতে পারে।</p>
                         <div className='clipboard'>
-                            <p>helloworld.py</p>
-                            <pre>print("Hello, World!")</pre>
+                            <h5>helloworld.py</h5>
+                            <Code language='python' code={code}></Code>
                         </div>
                         <p className='pt-3'>একদম সহজ. আপনার ফাইলটি সেইভ করুন. আপনার কমান্ড লাইন খুলুন, আপনি যে ডিরেক্টরিতে আপনার ফাইল সেইভ করেছেন সেখানে নেভিগেট করুন এবং রান করুনঃ</p>
                         <div className='clipboard-terminal'>
@@ -53,8 +56,8 @@ const Python_GetStarted = () => {
                         <p className='pt-3'>যেখানে "helloworld.py" আপনার পাইথন ফাইলের নাম।</p>
                         <p>আসুন আমাদের প্রথম পাইথন ফাইলটি লিখি, যার নাম <mark>helloworld.py</mark>, যেটি যেকোন টেক্সট এডিটরে করা যেতে পারে।</p>
                         <div className='clipboard'>
-                            <p>helloworld.py</p>
-                            <pre>print("Hello, World!")</pre>
+                            <h5>helloworld.py</h5>
+                            <Code language='python' code={code}></Code>
                         </div>
                         <p className='pt-3'>একদম সহজ. আপনার ফাইলটি সেইভ করুন. আপনার কমান্ড লাইন খুলুন, আপনি যে ডিরেক্টরিতে আপনার ফাইল সেইভ করেছেন সেখানে নেভিগেট করুন এবং রান করুনঃ</p>
                         <div className='clipboard-terminal'>

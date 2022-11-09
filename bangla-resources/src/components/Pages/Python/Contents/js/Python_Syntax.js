@@ -1,5 +1,21 @@
 import React from 'react';
 import '../../../Common/css/styles.css';
+import Code from '../../../Common/CodeThemes/Dracula_SyntaxHighlighter';
+
+const code1 = `if 5 > 2: 
+    print("Five is greater than two!")`;
+
+const code2 = `if 5 > 2: 
+print("Five is greater than two!")`;
+
+const code3 = `if 5 > 2: 
+    print("Five is greater than two!") 
+if 5 > 2: 
+        print("Five is greater than two!")`;
+
+const code4 = `if 5 > 2: 
+    print("Five is greater than two!") 
+        print("Five is greater than two!")`;
 
 const Python_Syntax = () => {
     return (
@@ -25,40 +41,25 @@ const Python_Syntax = () => {
                         <p>ইন্ডেন্টেশন বলতে, একটি কোড লাইনের শুরুতে স্পেস বোঝায়।</p>
                         <p>অন্যান্য প্রোগ্রামিং ভাষায় কোডে ইন্ডেন্টেশন শুধুমাত্র পঠনযোগ্যতার জন্য ব্যবহার করা হয় কিন্তু পাইথনে ইন্ডেন্টেশন কোডের একটি ব্লক নির্দেশ করে, তাই পাইথনে ইন্ডেন্টেশন খুবই গুরুত্বপূর্ণ।</p>
                         <div className='clipboard'>
-                            <h4>উদাহরণ</h4>
-                            <pre>
-                                if 5 &gt; 2: <br />
-                                &emsp;&emsp;print("Five is greater than two!")
-                            </pre>
+                            <h4>উদাহরণঃ</h4>
+                            <Code language='python' code={code1}></Code>
                         </div>
                         <p className='pt-3'>আপনি ইন্ডেন্টেশন এড়িয়ে গেলে পাইথন আপনাকে একটি এরর দিবে।</p>
                         <div className='clipboard-error'>
-                            <h4>উদাহরণ</h4>
+                            <h4>উদাহরণঃ</h4>
                             <p>সিনট্যাক্স এররঃ</p>
-                            <pre>
-                                if 5 &gt; 2: <br />
-                                print("Five is greater than two!")
-                            </pre>
+                            <Code language='python' code={code2}></Code>
                         </div>
                         <p className='pt-3'>একজন প্রোগ্রামার হিসাবে স্পেস সংখ্যা আপনার উপর নির্ভর করে, তবে সবচেয়ে সাধারণ ব্যবহার হলো চার, কিন্তু এটি কমপক্ষে একটি হতে হবে।</p>
                         <div className='clipboard'>
-                            <h4>উদাহরণ</h4>
-                            <pre>
-                                if 5 &gt; 2: <br />
-                                &emsp;&emsp;print("Five is greater than two!") <br />
-                                if 5 &gt; 2: <br />
-                                &emsp;&emsp;&emsp;&emsp;print("Five is greater than two!")
-                            </pre>
+                            <h4>উদাহরণঃ</h4>
+                            <Code language='python' code={code3}></Code>
                         </div>
                         <p className='pt-3'>আপনাকে কোডের একই ব্লকে একই সংখ্যক স্পেস ব্যবহার করতে হবে, অন্যথায় পাইথন আপনাকে একটি এরর দিবে।</p>
                         <div className='clipboard-error'>
-                            <h4>উদাহরণ</h4>
+                            <h4>উদাহরণঃ</h4>
                             <p>সিনট্যাক্স এররঃ</p>
-                            <pre>
-                                if 5 &gt; 2: <br />
-                                &emsp;&emsp;print("Five is greater than two!") <br />
-                                &emsp;&emsp;&emsp;&emsp;print("Five is greater than two!")
-                            </pre>
+                            <Code language='python' code={code4}></Code>
                         </div>
                     </div>
                 </div>

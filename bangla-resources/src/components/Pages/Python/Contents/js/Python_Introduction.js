@@ -1,5 +1,8 @@
 import React from 'react';
 import '../../../Common/css/styles.css';
+import Code from '../../../Common/CodeThemes/Dracula_SyntaxHighlighter';
+
+const code = `print("Hello, World!")`;
 
 const Python_Introduction = () => {
     return (
@@ -53,10 +56,8 @@ const Python_Introduction = () => {
                             <li>পাইথন ইন্ডেন্টেশনের উপর নির্ভর করে, হোয়াইটস্পেস ব্যবহার করে, যেমন লুপ, ফাংশন এবং ক্লাস ইত্যাদি। অন্যান্য প্রোগ্রামিং ভাষা প্রায়ই এই উদ্দেশ্যে কার্লি-ব্রাকেট ব্যবহার করে।</li>
                         </ul>
                         <div className='clipboard'>
-                            <h3>উদাহরণ</h3>
-                            <pre>
-                                print("Hello, World!")
-                            </pre>
+                            <h5>উদাহরণঃ</h5>
+                            <Code language='python' code={code}></Code>
                         </div>
                     </div>
                 </div>
