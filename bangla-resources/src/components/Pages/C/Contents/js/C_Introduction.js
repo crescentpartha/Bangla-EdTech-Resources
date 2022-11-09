@@ -1,5 +1,8 @@
 import React from 'react';
 import '../../../Common/css/styles.css';
+import Code from '../../../Common/CodeThemes/Dracula_SyntaxHighlighter';
+
+const code = `printf("Hello, World!");`;
 
 const C_Introduction = () => {
     return (
@@ -31,10 +34,8 @@ const C_Introduction = () => {
                             <li>সি এবং সি++ এর মধ্যে প্রধান পার্থক্য হল সি++ ক্লাস এবং অবজেক্টকে সমর্থন করে, যা সি করে না।</li>
                         </ul>
                         <div className='clipboard'>
-                            <h3>উদাহরণ</h3>
-                            <pre>
-                                printf("Hello, World!");
-                            </pre>
+                            <h5>উদাহরণঃ</h5>
+                            <Code language='c' code={code}></Code>
                         </div>
                     </div>
                 </div>
