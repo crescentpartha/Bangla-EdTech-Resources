@@ -3,36 +3,53 @@ mark {
 }
 
 /* hover effect on Content list for individual Tutorial */
-.home-hover > div > a:hover {
+.home-hover>div>a:hover {
     background-color: #CCCCCC;
 }
 
 /* clipboard style are used to display the code properly */
-.clipboard, .clipboard-terminal {
+.clipboard,
+.clipboard-terminal {
     background-color: #eee;
     display: block;
     padding: 20px;
     border-radius: 5px;
 }
-.clipboard > pre {
+
+.clipboard>pre {
     background-color: white;
     border-left: 5px solid #04AA6D;
     padding: 10px;
 }
-.clipboard-terminal > pre {
+
+.clipboard-terminal>pre {
     background-color: #000000;
     border-left: 5px solid #04AA6D;
     color: #eee;
     padding: 10px;
 }
+
 .clipboard-error {
     background-color: #FFDDDD;
     display: block;
     padding: 20px;
     border-radius: 5px;
 }
-.clipboard-error > pre {
+
+.clipboard-error>pre {
     background-color: white;
     border-left: 5px solid #F44336;
     padding: 10px;
+}
+
+/* Card Hover Effect */
+
+.card-hover-effect {
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+    border: 0;
+}
+
+.card-hover-effect:hover {
+    transform: scale(1.05);
 }

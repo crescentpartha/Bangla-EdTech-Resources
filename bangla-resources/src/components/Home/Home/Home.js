@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import programming_concept from '../../../images/programming-concept.jpg';
 import Categories from '../Categories/Categories';
+import Resources from '../WhyBanglaResources/Resources';
 
 const Home = () => {
     return (
@@ -14,7 +15,7 @@ const Home = () => {
                         <h4 className='m-0 pb-4'>সর্বশেষ টিউটোরিয়াল এবং আপডেট পেতেঃ</h4>
                         <div className='d-flex justify-content-start'>
                             <input style={{ border: '1px solid #E1E1E1' }} className='py-1 px-2 w-75 rounded-start border-end-0 text-success' type="text" placeholder='ইমেইল লিখুন' />
-                            <button style={{backgroundColor: '#04AA6D'}} className='text-light p-2 btn rounded-end rounded-0'>সাবস্ক্রাইব!</button>
+                            <button style={{ backgroundColor: '#04AA6D' }} className='text-light p-2 btn rounded-end rounded-0'>সাবস্ক্রাইব!</button>
                         </div>
                     </Col>
                     <Col className='text-center'>
@@ -23,6 +24,7 @@ const Home = () => {
                 </Row>
             </div>
             <Categories></Categories>
+            <Resources></Resources>
         </div>
     );
 };
