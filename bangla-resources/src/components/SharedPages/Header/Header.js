@@ -21,7 +21,7 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <Nav.Link className='btn btn-success px-4 text-light' as={Link} to="/login">লগইন</Nav.Link>
+                            <Nav.Link style={{backgroundColor: '#04AA6D'}} className='btn px-4 text-light' as={Link} to="/login">লগইন</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
