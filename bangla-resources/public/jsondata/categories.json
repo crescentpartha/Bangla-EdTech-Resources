@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "ডেভেলপমেন্ট",
+        "total_courses": "২+ কোর্স", 
+        "img": "https://www.tutorialspoint.com/static/images/development.svg"
+    },
+    {
+        "id": 2,
+        "name": "আইটি এন্ড নেটওয়ার্কিং",
+        "total_courses": "0+ কোর্স", 
+        "img": "https://www.tutorialspoint.com/static/images/it-and-networking.svg"
+    },
+    {
+        "id": 3,
+        "name": "ডাটা সাইন্স এন্ড এআই এমএল",
+        "total_courses": "0+ কোর্স", 
+        "img": "https://www.tutorialspoint.com/static/images/data-science-and-ai-ml.svg"
+    },
+    {
+        "id": 4,
+        "name": "সাইবার সিকিউরিটি",
+        "total_courses": "0+ কোর্স", 
+        "img": "https://www.tutorialspoint.com/static/images/cyber-security.svg"
+    },
+    {
+        "id": 5,
+        "name": "মার্কেটিং",
+        "total_courses": "0+ কোর্স", 
+        "img": "https://www.tutorialspoint.com/static/images/marketing.svg"
+    },
+    {
+        "id": 6,
+        "name": "অফিস প্রডাকটিভিটি",
+        "total_courses": "0+ কোর্স", 
+        "img": "https://www.tutorialspoint.com/static/images/office-productivity.svg"
+    },
+    {
+        "id": 7,
+        "name": "বিসনেস",
+        "total_courses": "0+ কোর্স", 
+        "img": "https://www.tutorialspoint.com/static/images/business.svg"
+    },
+    {
+        "id": 8,
+        "name": "লাইফ স্ট্যাইল",
+        "total_courses": "0+ কোর্স", 
+        "img": "https://www.tutorialspoint.com/static/images/lifestyle.svg"
+    }
+]
