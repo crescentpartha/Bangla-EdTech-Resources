@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import programming_concept from '../../../images/programming-concept.jpg';
 import Categories from '../Categories/Categories';
+import ChooseWhatToLearn from '../ChooseWhatToLearn/ChooseWhatToLearn';
 import Resources from '../WhyBanglaResources/Resources';
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </div>
+            <ChooseWhatToLearn></ChooseWhatToLearn>
             <Categories></Categories>
             <Resources></Resources>
         </div>

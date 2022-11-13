@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "পাইথন",
+        "img": "https://static.javatpoint.com/images/homeicon/python.png",
+        "course_link": "/pythonHome/python_introduction"
+    },
+    {
+        "id": 2,
+        "name": "সি",
+        "img": "https://static.javatpoint.com/images/homeicon/c-programming.png",
+        "course_link": "/cHome/c_introduction"
+    },
+    {
+        "id": 3,
+        "name": "সি++",
+        "img": "https://static.javatpoint.com/images/homeicon/cpp.png",
+        "course_link": "/cppHome/cpp_introduction"
+    },
+    {
+        "id": 4,
+        "name": "জাভাস্ক্রিপ্ট",
+        "img": "https://static.javatpoint.com/images/logo/javascripthome.png",
+        "course_link": "/javascriptHome/javascript_introduction"
+    }
+]
