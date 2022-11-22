@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import './Register.css';
 
 const Register = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -12,10 +13,10 @@ const Register = () => {
     // console.log(errors);
 
     return (
-        <div style={{width: '500px'}} className='bg-light mx-auto rounded py-4 my-5 shadow-sm'>
+        <div className='auth-width bg-light mx-auto rounded py-4 my-5 shadow-sm'>
             <h2 className='mb-0 text-capitalize'>Create your Account</h2>
             <SocialLogin></SocialLogin>
-            <form className='d-flex flex-column gap-1 px-5' onSubmit={handleSubmit(onSubmit)}>
+            <form className='form-width d-flex flex-column gap-1' onSubmit={handleSubmit(onSubmit)}>
                 <input
                     className='py-2 px-2 mb-2 rounded border-0'
                     placeholder='Name'

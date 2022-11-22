@@ -3,7 +3,7 @@ import google from '../../../images/google.png';
 
 const SocialLogin = () => {
     return (
-        <div className='d-flex flex-column flex-nowrap items-center justify-center mx-5 my-4'>
+        <div className='form-width d-flex flex-column flex-nowrap items-center justify-center my-4'>
             <button className='d-flex align-items-center justify-content-center gap-3 bg-primary py-2 mx-auto my-4 rounded w-100 border-0'>
                 <img width={25} src={google} alt="google logo" />
                 <span className='text-white fw-semibold text-uppercase'>Google</span>
