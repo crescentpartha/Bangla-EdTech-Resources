@@ -14,6 +14,7 @@ import CHome from './components/Pages/C/CHome/CHome';
 import CIntroduction from './components/Pages/C/Contents/js/C_Introduction';
 import CGetStarted from './components/Pages/C/Contents/js/C_GetStarted';
 import CSyntax from './components/Pages/C/Contents/js/C_Syntax';
+import RetrievePassword from './components/Authentication/RetrievePassword/RetrievePassword';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         </Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/retrieve-password' element={<RetrievePassword></RetrievePassword>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
