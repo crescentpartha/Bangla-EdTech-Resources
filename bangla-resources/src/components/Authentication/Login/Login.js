@@ -1,14 +1,30 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import '../Register/Register.css';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+    const navigate = useNavigate();
+
+    if (user) {
+        navigate('/home');
+    }
 
     const onSubmit = data => {
-        console.log(data);
+        const { email, password } = data;
+        // console.log(data);
+
+        signInWithEmailAndPassword(email, password);
     }
     // console.log(errors);
 
@@ -42,6 +58,12 @@ const Login = () => {
                         }
                     })}
                 />
+                {
+                    loading && <p className='text-danger'>Loading...</p>
+                }
+                {
+                    error && <p className='text-danger'>{error.message}</p>
+                }
                 <p className='text-danger'>{errors?.password?.message}</p>
                 <input
                     className='py-2 px-2 rounded bg-primary text-white fw-semibold border-0'
