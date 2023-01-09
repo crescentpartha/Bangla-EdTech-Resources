@@ -10,6 +10,7 @@ import PythonHome from './components/Pages/Python/PythonHome/PythonHome';
 import PythonIntroduction from './components/Pages/Python/Contents/js/Python_Introduction';
 import PythonGetStarted from './components/Pages/Python/Contents/js/Python_GetStarted';
 import PythonSyntax from './components/Pages/Python/Contents/js/Python_Syntax';
+import PythonComments from './components/Pages/Python/Contents/js/Python_Comments';
 import CHome from './components/Pages/C/CHome/CHome';
 import CIntroduction from './components/Pages/C/Contents/js/C_Introduction';
 import CGetStarted from './components/Pages/C/Contents/js/C_GetStarted';
@@ -27,6 +28,7 @@ function App() {
           <Route path='python_introduction' element={<PythonIntroduction></PythonIntroduction>}></Route>
           <Route path='python_getStarted' element={<PythonGetStarted></PythonGetStarted>}></Route>
           <Route path='python_syntax' element={<PythonSyntax></PythonSyntax>}></Route>
+          <Route path='python_comments' element={<PythonComments></PythonComments>}></Route>
         </Route>
         <Route path='/cHome' element={<CHome></CHome>}>
           <Route path='c_introduction' element={<CIntroduction></CIntroduction>}></Route>
