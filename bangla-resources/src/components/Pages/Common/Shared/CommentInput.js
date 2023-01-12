@@ -1,6 +1,7 @@
 import React from 'react';
 import { format } from 'date-fns';
 import { useForm } from "react-hook-form";
+import { toast } from 'react-toastify';
 
 const CommentInput = ({tutorial, topic}) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -8,7 +9,30 @@ const CommentInput = ({tutorial, topic}) => {
     const time = format(new Date(), 'pp'); // lowercase pp
 
     const onSubmit = (data) => {
-        console.log(data.comment, tutorial, topic, date, time);
+        // console.log(data.comment, tutorial, topic, date, time);
+        const data2 = {
+            tutorial: tutorial,
+            topic: topic,
+            comment: data.comment,
+            date: date,
+            time: time
+        }
+        // console.log(data2);
+
+        // POST a comment from client-side to server-side
+        const url = `http://localhost:5000/comment`;
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data2)
+        })
+        .then(res => res.json())
+        .then(result => {
+            toast('Your comment is successfully added');
+            // console.log(result);
+        });
     }
 
     return (

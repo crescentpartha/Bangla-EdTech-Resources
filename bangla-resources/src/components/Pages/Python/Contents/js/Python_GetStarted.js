@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../Common/css/styles.css';
 import Code from '../../../Common/CodeThemes/Dracula_SyntaxHighlighter';
+import CommentInput from '../../../Common/Shared/CommentInput';
 
 const code = `print("Hello, World!")`;
 
@@ -69,6 +70,9 @@ const Python_GetStarted = () => {
                         </div>
                         <p className='pt-3'>অভিনন্দন, আপনি আপনার প্রথম পাইথন প্রোগ্রামটি লিখেছেন এবং রান করেছেন।</p>
                     </div>
+                </div>
+                <div>
+                    <CommentInput tutorial="python" topic="getStarted"></CommentInput>
                 </div>
             </div>
         </div>

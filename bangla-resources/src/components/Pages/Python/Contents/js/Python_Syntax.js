@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../Common/css/styles.css';
 import Code from '../../../Common/CodeThemes/Dracula_SyntaxHighlighter';
+import CommentInput from '../../../Common/Shared/CommentInput';
 
 const code1 = `if 5 > 2: 
     print("Five is greater than two!")`;
@@ -62,6 +63,9 @@ const Python_Syntax = () => {
                             <Code language='python' code={code4}></Code>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <CommentInput tutorial="python" topic="syntax"></CommentInput>
                 </div>
             </div>
         </div>
