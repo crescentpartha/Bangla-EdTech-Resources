@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 
 const CommentInput = ({tutorial, topic}) => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const date = format(new Date(), 'PP'); // uppercase PP
     const time = format(new Date(), 'pp'); // lowercase pp
 
@@ -32,6 +32,7 @@ const CommentInput = ({tutorial, topic}) => {
         .then(result => {
             toast('Your comment is successfully added');
             // console.log(result);
+            reset();
         });
     }
 
