@@ -2,6 +2,7 @@ import React from 'react';
 import '../../../Common/css/styles.css';
 import Code from '../../../Common/CodeThemes/Dracula_SyntaxHighlighter';
 import CommentInput from '../../../Common/Shared/CommentInput';
+import CommentDisplay from '../../../Common/Shared/CommentDisplay';
 
 const code = `print("Hello, World!")`;
 
@@ -73,6 +74,9 @@ const Python_GetStarted = () => {
                 </div>
                 <div>
                     <CommentInput tutorial="python" topic="getStarted"></CommentInput>
+                </div>
+                <div>
+                    <CommentDisplay tutorial="python" topic="getStarted"></CommentDisplay>
                 </div>
             </div>
         </div>

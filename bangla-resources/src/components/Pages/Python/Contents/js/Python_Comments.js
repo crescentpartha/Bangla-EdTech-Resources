@@ -1,5 +1,6 @@
 import React from 'react';
 import Code from '../../../Common/CodeThemes/Dracula_SyntaxHighlighter';
+import CommentDisplay from '../../../Common/Shared/CommentDisplay';
 import CommentInput from '../../../Common/Shared/CommentInput';
 
 const code1 = `#This is a comment
@@ -63,6 +64,9 @@ const Python_Comments = () => {
                 </div>
                 <div>
                     <CommentInput tutorial="python" topic="comments"></CommentInput>
+                </div>
+                <div>
+                    <CommentDisplay tutorial="python" topic="comments"></CommentDisplay>
                 </div>
             </div>
         </div>
