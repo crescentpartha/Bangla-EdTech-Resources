@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import CommentEditModal from './CommentEditModal';
 
 const CommentDisplayShow = ({ singleComment }) => {
     const { comment, date, time } = singleComment;
     const arr = comment.split('\n');
     // console.log(arr);
+
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
 
     // Calculate the number of days of comments;
     const date_1 = new Date(`${date}`);
@@ -24,10 +28,10 @@ const CommentDisplayShow = ({ singleComment }) => {
             fetch(url, {
                 method: 'DELETE'
             })
-            .then(res => res.json())
-            .then(data => {
-                // console.log(data?.deletedCount);
-            });
+                .then(res => res.json())
+                .then(data => {
+                    // console.log(data?.deletedCount);
+                });
         }
     }
 
@@ -47,6 +51,14 @@ const CommentDisplayShow = ({ singleComment }) => {
                     className='btn btn-light me-4'
                     style={{ padding: '1px 5px' }}
                 >Delete</button>
+
+                <button
+                    onClick={handleShow}
+                    className='btn btn-light me-4'
+                    style={{ padding: '1px 5px' }}
+                >Edit</button>
+                {show && <CommentEditModal show={show} setShow={setShow} singleComment={singleComment}></CommentEditModal>}
+
                 <p className='mb-0' title={`${date} at ${time}`}>
                     <small>
                         {TotalDays > 1 ? `${TotalDays}d` : 'Today'}
