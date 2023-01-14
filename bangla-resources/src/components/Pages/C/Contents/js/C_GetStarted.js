@@ -1,6 +1,8 @@
 import React from 'react';
 import '../../../Common/css/styles.css';
 import Code from '../../../Common/CodeThemes/Dracula_SyntaxHighlighter';
+import CommentInput from '../../../Common/Shared/CommentInput';
+import CommentDisplay from '../../../Common/Shared/CommentDisplay';
 
 const code = `#include <stdio.h>
 int main() {
@@ -54,6 +56,12 @@ const C_GetStarted = () => {
                         </div>
                         <p className='pt-3'><span style={{color: '#E6706C'}}>অভিনন্দন!</span> আপনি এখন আপনার প্রথম সি প্রোগ্রামটি লিখেছেন এবং রান করেছেন।</p>
                     </div>
+                </div>
+                <div>
+                    <CommentInput tutorial="c" topic="getStarted"></CommentInput>
+                </div>
+                <div>
+                    <CommentDisplay tutorial="c" topic="getStarted"></CommentDisplay>
                 </div>
             </div>
         </div>
