@@ -15,7 +15,7 @@ const CommentEditModal = ({ show, setShow, singleComment }) => {
             id: singleComment._id
         }
 
-        const url = `http://localhost:5000/comment/${singleComment._id}`;
+        const url = `https://bangla-ed-tech-resources-server.vercel.app/comment/${singleComment._id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -20,7 +20,7 @@ const CommentInput = ({tutorial, topic}) => {
         // console.log(data2);
 
         // POST a comment from client-side to server-side
-        const url = `http://localhost:5000/comment`;
+        const url = `https://bangla-ed-tech-resources-server.vercel.app/comment`;
         fetch(url, {
             method: 'POST',
             headers: {

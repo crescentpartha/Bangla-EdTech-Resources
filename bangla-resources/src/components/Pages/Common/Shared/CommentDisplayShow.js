@@ -23,7 +23,7 @@ const CommentDisplayShow = ({ singleComment }) => {
             // console.log('Deleting comment with id = ', id);
 
             // delete a comment in client-side and send to the server-side
-            const url = `http://localhost:5000/topic-wise-comment/${id}?tutorial=${singleComment.tutorial}&topic=${singleComment.topic}`;
+            const url = `https://bangla-ed-tech-resources-server.vercel.app/topic-wise-comment/${id}?tutorial=${singleComment.tutorial}&topic=${singleComment.topic}`;
             // console.log(url);
             fetch(url, {
                 method: 'DELETE'

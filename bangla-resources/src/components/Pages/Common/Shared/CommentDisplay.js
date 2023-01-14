@@ -8,7 +8,7 @@ const CommentDisplay = ({ tutorial, topic }) => {
     // console.log(comments);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/topic-wise-comment?tutorial=${tutorial}&topic=${topic}`)
+        fetch(`https://bangla-ed-tech-resources-server.vercel.app/topic-wise-comment?tutorial=${tutorial}&topic=${topic}`)
             .then(res => res.json())
             .then(data => setComments(data));
     }, [tutorial, topic, comments]);
