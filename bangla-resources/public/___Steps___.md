@@ -4,6 +4,8 @@
 - [Set Environment Variables for Firebase Config](#set-environment-variables-for-firebase-config)
   - [Without setup Environment Variables for Firebase Configuration](#without-setup-environment-variables-for-firebase-configuration)
   - [Set Environment Variables for Firebase Configuration](#set-environment-variables-for-firebase-configuration)
+- [Set Environment Variables for MongoDB Config](#set-environment-variables-for-mongodb-config)
+- [Vercel deployment documentation and link](#vercel-deployment-documentation-and-link)
 
 # Basic Project Setup
 
@@ -57,5 +59,21 @@ const firebaseConfig = {
   appId:process.env.REACT_APP_appId,
 };
 ```
+
+**[🔼Back to Top](#table-of-contents)**
+
+# Set Environment Variables for MongoDB Config
+
+``` JavaScript
+DB_USER=dbUser
+DB_PASS=2o4pxnhgxpBBEZgG
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+# Vercel deployment documentation and link
+
+- [Project Setup 10 (Server Deploy on Vercel)](https://github.com/crescentpartha/warehouse-management-client-side-crescentpartha/blob/main/books-warehouse/public/Steps.md#project-setup-10-server-deploy-on-vercel)
+- Server Link: [https://bangla-ed-tech-resources-server.vercel.app/](https://bangla-ed-tech-resources-server.vercel.app/)
 
 **[🔼Back to Top](#table-of-contents)**
