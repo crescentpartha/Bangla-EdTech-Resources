@@ -15,7 +15,11 @@ const CommentDisplay = ({ tutorial, topic }) => {
 
     return (
         <div className='mt-3'>
-            <h2 className='fs-3' style={{color: '#04AA6D'}}>Comments</h2>
+            <div>
+                {
+                    comments.length > 0 && <h2 className='fs-3' style={{color: '#04AA6D'}}>Comments</h2>
+                }
+            </div>
             <div>
                 {
                     comments.map(comment => <CommentDisplayShow
