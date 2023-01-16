@@ -15,6 +15,7 @@ const PythonHome = () => {
                         <CustomLink className='py-1 px-3 d-block' to='python_getStarted'>এবার শুরু করা যাক</CustomLink>
                         <CustomLink className='py-1 px-3 d-block' to='python_syntax'>সিনট্যাক্স</CustomLink>
                         <CustomLink className='py-1 px-3 d-block' to='python_comments'>কমেন্ট</CustomLink>
+                        <CustomLink className='py-1 px-3 d-block' to='python_variables'>ভেরিয়েবল</CustomLink>
                     </nav>
                 </div>
                 <Outlet />
