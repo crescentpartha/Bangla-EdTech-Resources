@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import CommentEditModal from './CommentEditModal';
 import userIcon from '../../../../images/user.png';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../firebase.init';
 
 const CommentDisplayShow = ({ singleComment }) => {
-    const { user, photoURL, comment, date, time } = singleComment;
+    const { user, email, photoURL, comment, date, time } = singleComment;
+    const [fireUser] = useAuthState(auth);
     const arr = comment.split('\n');
     // console.log(arr);
 
@@ -59,12 +62,14 @@ const CommentDisplayShow = ({ singleComment }) => {
                         onClick={() => handleDelete(singleComment._id)}
                         className='btn btn-light me-4'
                         style={{ padding: '1px 5px' }}
+                        disabled={email !== fireUser.email}
                     >Delete</button>
 
                     <button
                         onClick={handleShow}
                         className='btn btn-light me-4'
                         style={{ padding: '1px 5px' }}
+                        disabled={email !== fireUser.email}
                     >Edit</button>
                     {show && <CommentEditModal show={show} setShow={setShow} singleComment={singleComment}></CommentEditModal>}
 
