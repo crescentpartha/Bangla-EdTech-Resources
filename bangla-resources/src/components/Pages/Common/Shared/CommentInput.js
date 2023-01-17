@@ -19,9 +19,9 @@ const CommentInput = ({ tutorial, topic }) => {
             comment: data.comment,
             date: date,
             time: time, 
-            email: user.email,
-            user: user.displayName,
-            photoURL: user.photoURL
+            email: user?.email,
+            user: user?.displayName,
+            photoURL: user?.photoURL
         }
         // console.log(data2);
         // console.log(user);

@@ -62,14 +62,14 @@ const CommentDisplayShow = ({ singleComment }) => {
                         onClick={() => handleDelete(singleComment._id)}
                         className='btn btn-light me-4'
                         style={{ padding: '1px 5px' }}
-                        disabled={email !== fireUser.email}
+                        disabled={email !== fireUser?.email}
                     >Delete</button>
 
                     <button
                         onClick={handleShow}
                         className='btn btn-light me-4'
                         style={{ padding: '1px 5px' }}
-                        disabled={email !== fireUser.email}
+                        disabled={email !== fireUser?.email}
                     >Edit</button>
                     {show && <CommentEditModal show={show} setShow={setShow} singleComment={singleComment}></CommentEditModal>}
 
