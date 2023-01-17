@@ -23,8 +23,8 @@ const CommentInput = ({ tutorial, topic }) => {
             user: user.displayName,
             photoURL: user.photoURL
         }
-        console.log(data2);
-        console.log(user);
+        // console.log(data2);
+        // console.log(user);
 
         // POST a comment from client-side to server-side
         const url = `https://bangla-ed-tech-resources-server.vercel.app/comment`;

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import CommentEditModal from './CommentEditModal';
+import userIcon from '../../../../images/user.png';
 
 const CommentDisplayShow = ({ singleComment }) => {
-    const { comment, date, time } = singleComment;
+    const { user, photoURL, comment, date, time } = singleComment;
     const arr = comment.split('\n');
     // console.log(arr);
 
@@ -36,34 +37,43 @@ const CommentDisplayShow = ({ singleComment }) => {
     }
 
     return (
-        <div className='mb-3 p-3 shadow-sm rounded'>
-            <div className='mb-1 border p-2 rounded'>
+        <div className='mb-3 p-3 shadow-sm rounded d-flex flex-row justify-content-start align-items-start gap-2'>
+            <div>
                 {
-                    arr.map((a, index) => <p
-                        className='mb-0'
-                        key={index}
-                    >{a}</p>)
+                    photoURL ? <img className='rounded-circle' width="40px" src={photoURL} alt={user} />
+                        : <img className='rounded-circle' width="40px" src={userIcon} alt='Icon' />
                 }
             </div>
-            <div className='d-flex justify-content-start align-items-center text-decoration-none'>
-                <button
-                    onClick={() => handleDelete(singleComment._id)}
-                    className='btn btn-light me-4'
-                    style={{ padding: '1px 5px' }}
-                >Delete</button>
+            <div>
+                <div className='mb-1 border p-2 rounded'>
+                    <p className='mb-1 fw-semibold' title="Username">{user}</p>
+                    {
+                        arr.map((a, index) => <p
+                            className='mb-0'
+                            key={index}
+                        >{a}</p>)
+                    }
+                </div>
+                <div className='d-flex justify-content-start align-items-center text-decoration-none'>
+                    <button
+                        onClick={() => handleDelete(singleComment._id)}
+                        className='btn btn-light me-4'
+                        style={{ padding: '1px 5px' }}
+                    >Delete</button>
 
-                <button
-                    onClick={handleShow}
-                    className='btn btn-light me-4'
-                    style={{ padding: '1px 5px' }}
-                >Edit</button>
-                {show && <CommentEditModal show={show} setShow={setShow} singleComment={singleComment}></CommentEditModal>}
+                    <button
+                        onClick={handleShow}
+                        className='btn btn-light me-4'
+                        style={{ padding: '1px 5px' }}
+                    >Edit</button>
+                    {show && <CommentEditModal show={show} setShow={setShow} singleComment={singleComment}></CommentEditModal>}
 
-                <p className='mb-0' title={`${date} at ${time}`}>
-                    <small>
-                        {TotalDays > 1 ? `${TotalDays}d` : 'Today'}
-                    </small>
-                </p>
+                    <p className='mb-0' title={`${date} at ${time}`}>
+                        <small>
+                            {TotalDays > 1 ? `${TotalDays}d` : 'Today'}
+                        </small>
+                    </p>
+                </div>
             </div>
         </div>
     );
