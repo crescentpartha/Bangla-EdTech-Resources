@@ -38,13 +38,13 @@ const PythonHome = () => {
                             <CustomLink className='py-1 px-3 d-block' to='python_iterators'>ইটারেটর্স</CustomLink>
                             <CustomLink className='py-1 px-3 d-block' to='python_scope'>স্কোপ</CustomLink>
                             <CustomLink className='py-1 px-3 d-block' to='python_modules'>মডিউল</CustomLink>
-                            <CustomLink className='py-1 px-3 d-block' to='python_dates'>ডেইট</CustomLink>
-                            <CustomLink className='py-1 px-3 d-block' to='python_math'>মেথ</CustomLink>
+                            <CustomLink className='py-1 px-3 d-block' to='python_dates'>ডেট</CustomLink>
+                            <CustomLink className='py-1 px-3 d-block' to='python_math'>ম্যাথ</CustomLink>
                             <CustomLink className='py-1 px-3 d-block' to='python_json'>জেসন</CustomLink>
                             <CustomLink className='py-1 px-3 d-block' to='python_reg-ex'>রেগুলার এক্সপ্রেশন্স</CustomLink>
                             <CustomLink className='py-1 px-3 d-block' to='python_pip'>পিএইপি</CustomLink>
-                            <CustomLink className='py-1 px-3 d-block' to='python_try-except'>ট্রি এক্সসেপ্ট</CustomLink>
-                            <CustomLink className='py-1 px-3 d-block' to='python_user-input'>ইউসার ইনপুট</CustomLink>
+                            <CustomLink className='py-1 px-3 d-block' to='python_try-except'>ট্রাই এক্সসেপ্ট</CustomLink>
+                            <CustomLink className='py-1 px-3 d-block' to='python_user-input'>ইউজার ইনপুট</CustomLink>
                             <CustomLink className='py-1 px-3 d-block' to='python_string-formatting'>স্ট্রিংস ফর্মেটিংস</CustomLink>
                         </div>
                     </nav>
