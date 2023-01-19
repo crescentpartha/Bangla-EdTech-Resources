@@ -74,9 +74,6 @@ const Python_Variables = () => {
                             <Code language='python' code={code6}></Code>
                         </div>
                     </div>
-                    <div>
-
-                    </div>
                 </div>
                 <div>
                     <CommentInput tutorial="python" topic="variables"></CommentInput>
