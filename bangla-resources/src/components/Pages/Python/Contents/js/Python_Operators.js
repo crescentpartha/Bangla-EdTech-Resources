@@ -72,7 +72,7 @@ const Python_Operators = () => {
                                     <td><code className='text-dark'>x ** y</code></td>
                                 </tr>
                                 <tr>
-                                    <td><code className='text-dark'>//</code></td>
+                                    <td><code className='text-dark'>&#47;&#47;</code></td>
                                     <td><code className='text-dark'>ফ্লোর ডিভিশন</code></td>
                                     <td><code className='text-dark'>x // y</code></td>
                                 </tr>
@@ -121,7 +121,7 @@ const Python_Operators = () => {
                                     <td><code className='text-dark'>x = x % 3</code></td>
                                 </tr>
                                 <tr>
-                                    <td><code className='text-dark'>//=</code></td>
+                                    <td><code className='text-dark'>&#47;&#47;=</code></td>
                                     <td><code className='text-dark'>x //= 3</code></td>
                                     <td><code className='text-dark'>x = x // 3</code></td>
                                 </tr>
