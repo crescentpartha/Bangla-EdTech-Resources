@@ -31,7 +31,7 @@ const Python_UserInput = () => {
                         <div className='clipboard mt-3'>
                             <h4>উদাহরণঃ</h4>
                             <p>Python 2.7</p>
-                            <Code language='python' code={code1}></Code>
+                            <Code language='python' code={code2}></Code>
                         </div>
                     </div>
                 </div>
