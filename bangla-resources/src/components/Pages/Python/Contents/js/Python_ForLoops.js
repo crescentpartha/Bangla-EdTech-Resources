@@ -44,7 +44,32 @@ const Python_ForLoops = () => {
                             <p>প্রতিটি ফল একটি ফলের তালিকায় প্রিন্ট করুনঃ</p>
                             <Code language='python' code={code1}></Code>
                         </div>
-                        
+                        <h3 className="mt-3">একটি স্ট্রিং মাধ্যমে লুপ</h3>
+                        <p>এমনকি স্ট্রিংগুলি পুনরাবৃত্তিযোগ্য বস্তু, এতে অক্ষরের একটি ক্রম রয়েছে।</p>
+                        <div className='clipboard'>
+                            <h4>উদাহরণঃ</h4>
+                            <p><code>banana</code> শব্দের অক্ষরগুলির মধ্য দিয়ে লুপ করুনঃ</p>
+                            <Code language='python' code={code2}></Code>
+                        </div>
+                        <h3 className="mt-3">ব্রেক স্টেটমেন্ট বা Break Statement</h3>
+                        <p>সমস্ত আইটেমের মাধ্যমে লুপ হওয়ার আগে, ব্রেক স্টেটমেন্টের সাহায্যে আমরা লুপটি বন্ধ করতে পারি।</p>
+                        <div className='clipboard'>
+                            <h4>উদাহরণঃ</h4>
+                            <p><code>x</code> এর মান <code>banana</code> হলে লোপ থেকে বাহির হয়ে যাবে।</p>
+                            <Code language='python' code={code3}></Code>
+                        </div>
+                        <div className='clipboard mt-3'>
+                            <h4>উদাহরণঃ</h4>
+                            <p><code>x</code> এর মান <code>banana</code> হলে লোপ থেকে বাহির হয়ে যাবে কিন্তু এইবার প্রিন্টের আগে বিরতি বা <code>break</code> আছে।</p>
+                            <Code language='python' code={code4}></Code>
+                        </div>
+                        <h3 className="mt-3">কন্টিনিউ স্টেটমেন্ট বা Continue Statement</h3>
+                        <p>কন্টিনিউ স্টেটমেন্ট দিয়ে আমরা লুপের বর্তমান পুনরাবৃত্তি বন্ধ করতে পারি এবং পরবর্তীটি চালিয়ে যেতে পারি।</p>
+                        <div className='clipboard mt-3'>
+                            <h4>উদাহরণঃ</h4>
+                            <p>এবার <code>banana</code> প্রিন্ট করবে না।</p>
+                            <Code language='python' code={code5}></Code>
+                        </div>
                     </div>
                 </div>
                 <div>
