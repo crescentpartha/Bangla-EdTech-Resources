@@ -18,6 +18,16 @@ my_function("Emil")
 my_function("Tobias")
 my_function("Linus")`;
 
+const code4 = `def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")`;
+
+const code5 = `def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil")`;
+
 const Python_Functions = () => {
     return (
         <div className='border-bottom' style={{ height: '100vh', overflow: 'auto' }}>
@@ -47,6 +57,24 @@ const Python_Functions = () => {
                         <div className='clipboard'>
                             <h4>উদাহরণঃ</h4>
                             <Code language='python' code={code3}></Code>
+                        </div>
+                        <h3 className="mt-3">প্যারামিটার বা আর্গুমেন্ট?</h3>
+                        <p>প্যারামিটার এবং আর্গুমেন্ট একই জিনিসের জন্য ব্যবহার করা হয়, একটি ফাংশনে তথ্য পাস করা।</p>
+                        <p>একটি ফাংশন এর দৃষ্টিকোণ থেকেঃ</p>
+                        <p>একটি প্যারামিটার হল ফাংশনের সংজ্ঞায় বন্ধনীর ভিতরে তালিকাভুক্ত ভেরিয়েবল।</p>
+                        <p>একটি আর্গুমেন্ট হল সেই মান যা ফাংশনে পাঠানো হয় যখন এটি কল করা হয়।</p>
+                        <h3>আর্গুমেন্টের সংখ্যা</h3>
+                        <p>ডিফল্টরূপে, সঠিক সংখ্যক আর্গুমেন্ট সহ একটি ফাংশন কল করা আবশ্যক। এর মানে হল যে যদি আপনার ফাংশন ২টি আর্গুমেন্ট আশা করে, তাহলে আপনাকে ২টি আর্গুমেন্ট সহ ফাংশনটিকে কল করতে হবে, বেশি নয় এবং কম নয়।</p>
+                        <div className='clipboard'>
+                            <h4>উদাহরণঃ</h4>
+                            <p>এই ফাংশনটি 2টি আর্গুমেন্ট আশা করে এবং 2টি আর্গুমেন্ট পায়ঃ</p>
+                            <Code language='python' code={code4}></Code>
+                        </div>
+                        <p className="mt-3">আপনি ১টি বা ৩টি আর্গুমেন্ট সহ ফাংশন কল করার চেষ্টা করলে, আপনি একটি ত্রুটি পাবেন।</p>
+                        <div className='clipboard-error'>
+                            <h4>উদাহরণঃ</h4>
+                            <p>এই ফাংশনটি ২টি আর্গুমেন্ট আশা করে, কিন্তু মাত্র ১টি পায়।</p>
+                            <Code language='python' code={code5}></Code>
                         </div>
                     </div>
                 </div>
